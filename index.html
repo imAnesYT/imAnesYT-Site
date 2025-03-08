@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imAnesYT's Website</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Button Styling */
+        .btn {
+            background: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background: #0051ff;
+        }
+
+        /* Card Styling */
+        .card {
+            background: white;
+            color: black;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to imAnesYT's Website</h1>
+    <p>Explore my projects and learn more about me!</p>
+
+    <!-- Description Card -->
+    <div class="card">
+        <h2>About Me</h2>
+        <p>Hi, I'm imAnesYT! I create mods for games like BombSquad and share cool projects with my community. Feel free to explore my work below!</p>
+    </div>
+
+    <!-- Projects Card -->
+    <div class="card">
+        <h2>My Projects</h2>
+        <p>Check out my BombSquad mods!</p>
+        <a href="/projects" class="btn">View mods</a>
+    </div>
+
+    <!-- JavaScript for Page Navigation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.body.style.opacity = "1";
+        });
+    </script>
+
+</body>
+</html>
